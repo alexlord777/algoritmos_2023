@@ -9,6 +9,11 @@ public class Main{
         int b= sc.nextInt();
         int c= sc.nextInt();
 
+        String k= order3Numbers(a, b, c);
+
+        System.out.print(k);
+        sc.close();
+
     }
 
     static String order3Numbers(int a, int b , int c)
@@ -16,17 +21,17 @@ public class Main{
          if(a>=b)
          {
              if(a>b){
-                if(b>c) return a+" > "+b+" >"+c;
-                else return a+" >"+ "("+b+" "+c+")";
+                if(b>c) return a+" "+b+" "+c;
+                else return a+" "+c+" "+b;
              }else{
-                if(b>c) return "("+b+" "+a+")"+" > "+ c;
-                else return c+" >"+ "("+b+" "+a+")";
+                if(b>c) return b+" "+a+" "+ c;
+                else return c+" "+b+" "+a;
              }
          }else{
-            if(a>c)return b+" > "+a+" >"+c;
+            if(a>c)return b+" "+a+" "+c;
             else{
-                if(a<c) return b+" > "+c+" >"+a;
-                else return b+" >"+ "("+c+" "+a+")";
+                if(a<c) return b+" "+c+" "+a;
+                else return b+" "+c+" "+a;
             }
          }
     }

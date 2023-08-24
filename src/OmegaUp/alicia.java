@@ -31,6 +31,8 @@ public class alicia
             System.out.print( chapas.indexOf(i) +" ");
         }
 
+        sc.close();
+
     }
 
 

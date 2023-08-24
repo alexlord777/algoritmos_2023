@@ -1,12 +1,15 @@
 package tareasKarina.semana1.cuadrado;
-import java.util.Scanner;;
+import java.util.Scanner;
 
-public class main {
+
+class Main
+{
     public static void main(String arg[])
     {
         Scanner sc = new Scanner(System.in);
         int n= sc.nextInt();
         square(n);
+        sc.close();
     }
 
     static void square(int n){
@@ -20,4 +23,6 @@ public class main {
             
         }
     }
+
+
 }

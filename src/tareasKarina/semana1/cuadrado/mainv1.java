@@ -8,6 +8,7 @@ public class mainv1 {
         Scanner sc = new Scanner(System.in);
         int n= sc.nextInt();
         square(n);
+        sc.close();
     }
 
     static void square(int n){

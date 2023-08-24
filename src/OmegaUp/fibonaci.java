@@ -8,6 +8,8 @@ public class fibonaci {
         BigInteger number = scanner.nextBigInteger();
 
         System.out.println(findFibonacciPosition1(number));
+
+        scanner.close();
     }
 
     static int fibonaciR(int n) {
